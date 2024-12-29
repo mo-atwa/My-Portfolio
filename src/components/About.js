@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div class="col">
           <div class="sea-photo hidden-div">
-            <img src="/images/about-photo.jpg" alt="" />
+            <img src="./images/about-photo.jpg" alt="" />
           </div>
         </div>
         {/* <div className="about-stats">

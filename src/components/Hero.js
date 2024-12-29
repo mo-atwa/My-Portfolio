@@ -60,7 +60,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-content">
         <div className="profile-img">
-          <img src="/images/portfolio.png" alt="Profile" />
+          <img src="./images/portfolio.png" alt="Profile" />
         </div>
         <h1 className="glitch" data-text="Mohamed Atwa">
           Mohamed Atwa
