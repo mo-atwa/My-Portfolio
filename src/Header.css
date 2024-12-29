@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0a0a0a;
+  border-bottom: 2px solid #ffffff;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a879ff; /* لون بنفسجي فاتح */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+header nav ul li:hover {
+  color: #a879ff;
+  cursor: pointer;
+}
