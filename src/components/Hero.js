@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import SocialLinks from "./SocialLinks";
 import "../styles/Hero.css";
 
@@ -9,10 +9,11 @@ const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const texts = [
-    "Frontend Developer",
-    "Transforming Ideas into Digital Reality",
-  ];
+  // جعل texts ثابتة باستخدام useMemo
+  const texts = useMemo(
+    () => ["Frontend Developer", "Transforming Ideas into Digital Reality"],
+    []
+  );
 
   const handleTyping = useCallback(() => {
     const current = texts[textIndex];
@@ -75,7 +76,6 @@ const Hero = () => {
           <SocialLinks />
         </div>
         {/* Down Arrow */}
-
         <svg
           className="down-arrow"
           onClick={scrollToNextSection}
