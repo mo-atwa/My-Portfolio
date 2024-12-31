@@ -9,7 +9,6 @@ const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // جعل texts ثابتة باستخدام useMemo
   const texts = useMemo(
     () => ["Frontend Developer", "Transforming Ideas into Digital Reality"],
     []
