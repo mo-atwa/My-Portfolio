@@ -1,7 +1,8 @@
 <<<<<<< HEAD
 # My-Portfolio
 =======
-Demo URL https://atwa-test.netlify.app/
+
+Demo URL https://atwa-portfolio.netlify.app
 
 GitHub URL https://mo-atwa.github.io/My-Portfolio/
 
