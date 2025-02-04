@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className={`navbar ${isMenuOpen ? "nav-open" : ""}`}>
+    <nav className={`
+      navbar 
+      ${isMenuOpen ? "nav-open" : ""} 
+      ${isScrolled ? "scrolled" : ""}
+    `}>
       <div className="nav-brand">Mohamed Atwa</div>
       <div className="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <X /> : <Menu />}

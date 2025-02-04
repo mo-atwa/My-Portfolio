@@ -4,12 +4,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.roboto-unique {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with actual weight value */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace with actual weight value */
+  font-style: normal;
+}
 :root {
   --primary-color: #4a90e2;
   --secondary-color: #2ecc71;
   --dark-color: #1a3550;
-  --p-color:#263f58b6;
+  --p-color: #263f58b6;
   --light-color: #ecf0f1;
   --transition: all 0.3s ease;
 }
@@ -24,28 +37,25 @@ body {
   color: var(--dark-color);
   background: #f5f6fa;
   position: relative;
-  /* background-image: url("https://pin.it/jAJ2FdPGs"); */
 }
 
-/* .special heading */
+/* Special class */
 .special-heading {
-  font-size: 120px;
-  font-weight: 800;
-  letter-spacing: -2px;
-  margin: 0;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", serif;
+  font-size: 49px;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
   text-align: center;
   z-index: 1;
-  color: #e2e0e082;
-  margin-bottom: 20px;
+  color: #828282;
 }
-
 
 @media (max-width: 768px) {
   .special-heading {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 }
-
 
 /* Loading Screen */
 .loading-screen {
@@ -87,18 +97,22 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  transition: var(--transition);
+}
+
+.scrolled {
+  border-radius: 14px;
+  width: 96%;
+  margin: 3px 2% 0 2%;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  background: linear-gradient(
-    45deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -124,11 +138,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(
-    45deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   transition: var(--transition);
 }
 
@@ -173,10 +183,7 @@ body {
     right: 0;
   }
 
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-
+  .about-content,
   .about-stats {
     grid-template-columns: 1fr;
   }

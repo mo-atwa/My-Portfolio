@@ -59,21 +59,23 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
-        <div className="profile-img">
+        <div className="profile-img" data-aos="zoom-in">
           <img src="./images/portfolio.png" alt="Profile" />
         </div>
-        <h1 className="glitch" data-text="Mohamed Atwa">
+        <h1 className="glitch" data-text="Mohamed Atwa" data-aos="zoom-in">
           Mohamed Atwa
         </h1>
-        <p className="typing-text">
+        <p className="typing-text" data-aos="zoom-in">
           {currentText}
           <span className="cursor" style={{ color: "transparent" }}>
             |
           </span>
         </p>
-        <div className="social-links">
+        <div className="social-links" data-aos="zoom-in">
           <SocialLinks />
         </div>
+
+
         {/* Down Arrow */}
         <svg
           className="down-arrow"
