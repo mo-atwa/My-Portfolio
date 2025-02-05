@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+::selection {
+  background: #4a90e2;
+  color: white;
+}
+::-moz-selection {
+  background: #4a90e2;
+  color: white;
+}
 .roboto-unique {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
@@ -154,10 +162,14 @@ body {
 
 /* Footer */
 .footer {
-  padding: 2rem;
+  padding: 1rem 0;
   background: var(--dark-color);
   color: white;
   text-align: center;
+  span{
+    color: var(--primary-color);
+    font-weight: bold;
+  }
 }
 
 /* Responsive Design */
@@ -169,7 +181,7 @@ body {
   .nav-links {
     position: fixed;
     top: 70px;
-    right: -100%;
+    right: -102%;
     width: 100%;
     height: calc(100vh - 70px);
     background: white;
@@ -195,7 +207,7 @@ body {
   }
 
   .typing-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .projects-grid {

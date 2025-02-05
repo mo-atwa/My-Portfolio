@@ -78,27 +78,27 @@ const WebDevelopmentExpertise = () => (
         </g>
       </svg>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section blue">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section blue">
       <h2>User Interface Design</h2>
       <p>Focus on creating visually appealing and responsive designs</p>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section red">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section red">
       <h2>AI Tools</h2>
       <p>Utilization of AI tools to enhance productivity</p>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section green">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section green">
       <h2>Frameworks</h2>
       <p>Development of interactive applications using React.js</p>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section teal">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section teal">
       <h2>Modern Technologies</h2>
       <p>Proficiency in HTML5, CSS3, SASS, and JavaScript</p>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section orange">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section orange">
       <h2>SEO Knowledge</h2>
       <p>Utilization of AI tools to enhance productivity</p>
     </div>
-    <div data-aos="fade-up" data-aos-duration="3000" class="section yellow">
+    <div data-aos="fade-up" data-aos-duration="3000" className="section yellow">
       <h2>Interactive Applications</h2>
       <p>Development of interactive applications using React.js</p>
     </div>

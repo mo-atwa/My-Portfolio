@@ -6,7 +6,7 @@ const SocialLinks = () => {
     <ul className="example-2">
       <li className="icon-content">
         <a
-          href="https://www.linkedin.com/in/mohamed-ahmed-315991212/"
+          href="https://www.linkedin.com/in/mohamed-atwa-315991212/"
           aria-label="LinkedIn"
           data-social="linkedin"
           target="_blank"

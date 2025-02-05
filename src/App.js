@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import "animate.css";
+
 const projects = [
   {
     title: "Leon",
@@ -31,7 +32,7 @@ const projects = [
   },
   {
     title: "Elzero",
-    description: "My  application on PSD from Elzero website",
+    description: "My application on PSD from Elzero website",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "./images/Elzero.png",
     demo: "https://mo-atwa.github.io/Elzero/",
@@ -39,33 +40,27 @@ const projects = [
   },
 ];
 
-AOS.init({
-  disable: function () {
-    return window.innerWidth < 768; // تعطيل AOS على الشاشات الأصغر من 768px
-  }
-});
-
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Initialize AOS inside the component
     AOS.init({
       duration: 1000,
-      once: false, // Re-run animation on every appearance
-      mirror: true, // Run animation on scroll up as well
-      disable: window.innerWidth < 768, // Disable on mobile devices
+      once: false,      // Re-run the animation when the element appears again
+      mirror: true,     // Run the animation when scrolling up as well
+      disable: false    // Disable AOS on screens smaller than 768px, adjust if you want it to run on mobile
     });
 
-    // Handle initial loading
+    // Handle the initial loading screen
     const timer = setTimeout(() => setIsLoading(false), 1500);
-
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    // Debounced scroll handler for better performance
+    // Function to handle scrolling with debounce for performance improvement
     const handleScroll = debounce(() => {
       const sections = document.querySelectorAll("section");
       const scrollPosition = window.scrollY + window.innerHeight / 3;

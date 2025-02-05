@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Projects.css";
 
 const Projects = ({ projects }) => {
-  const [visibleProjects] = useState(6);
+  const [visibleProjects] = useState(window.innerWidth <= 768 ? 3 : 6);
 
   const handleViewMore = () => {
     window.open("#", "_blank");

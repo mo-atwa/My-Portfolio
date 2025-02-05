@@ -21,7 +21,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
     <nav className={`
       navbar 
       ${isMenuOpen ? "nav-open" : ""} 
-      ${isScrolled ? "scrolled" : ""}
+      ${isMenuOpen ? "" : isScrolled ? "scrolled" : ""}
     `}>
       <div className="nav-brand">Mohamed Atwa</div>
       <div className="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>

@@ -34,10 +34,10 @@ const About = () => {
             and Domain Name System (DNS).
           </p>
           <div onClick={handDowanloudCV} className="cv" data-aos="fade-out">
-            <span class="project-footer__title">
-              <span class="project-footer__title__outline">MY CV</span>
-              <span class="project-footer__title__clip">
-                <span class="project-footer__title__filled">MY CV</span>
+            <span className="project-footer__title">
+              <span className="project-footer__title__outline">MY CV</span>
+              <span className="project-footer__title__clip">
+                <span className="project-footer__title__filled">MY CV</span>
               </span>
             </span>
             <img src="./images/download.gif" alt="Download icon" />
