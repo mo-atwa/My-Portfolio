@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { debounce } from "lodash";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,6 +9,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LoadingScreen from "./components/LoadingScreen";
+import MoreProjects from "./components/MoreProjects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
@@ -49,9 +51,9 @@ const App = () => {
     // Initialize AOS inside the component
     AOS.init({
       duration: 1000,
-      once: false,      // Re-run the animation when the element appears again
-      mirror: true,     // Run the animation when scrolling up as well
-      disable: false    // Disable AOS on screens smaller than 768px, adjust if you want it to run on mobile
+      once: false, // Re-run the animation when the element appears again
+      mirror: true, // Run the animation when scrolling up as well
+      disable: false, // Disable AOS on screens smaller than 768px, adjust if you want it to run on mobile
     });
 
     // Handle the initial loading screen
@@ -90,21 +92,32 @@ const App = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <Navbar
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        activeSection={activeSection}
-      />
-      <main>
-        <Hero />
-        <About />
-        <Projects projects={projects} />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen bg-white dark:bg-gray-900">
+              <Navbar
+                isMenuOpen={isMenuOpen}
+                setIsMenuOpen={setIsMenuOpen}
+                activeSection={activeSection}
+              />
+              <main>
+                <Hero />
+                <About />
+                <Projects AllProjects={projects} />
+
+                <Skills />
+                <Contact />
+              </main>
+              <Footer />
+            </div>
+          }
+        />
+        <Route path="/more-projects" element={<MoreProjects AllProjects={projects}/>} />
+      </Routes>
+    </Router>
   );
 };
 

@@ -36,14 +36,13 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  transition: object-position ease-out; /* Smooth transition for reset */
+  transition: object-position ease-out;
 }
 
 .project-card:hover .project-img img {
   animation: scrollImage 10s linear infinite;
 }
 
-/* Reset animation with smooth transition */
 .project-card:not(:hover) .project-img img {
   animation: none;
   object-position: top;
@@ -51,10 +50,10 @@
 
 @keyframes scrollImage {
   0% {
-      object-position: top;
+    object-position: top;
   }
   100% {
-      object-position: bottom;
+    object-position: bottom;
   }
 }
 
@@ -68,6 +67,12 @@
   gap: 1rem;
   opacity: 0;
   transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .project-links {
+    opacity: 1;
+  }
 }
 
 .project-img:hover .project-links {
@@ -105,7 +110,7 @@
   margin: 0.25rem;
   font-size: 0.9rem;
 }
-/* Additional styles for project link icons */
+
 .project-link {
   display: flex;
   align-items: center;
@@ -121,26 +126,82 @@
 .project-links a:hover .link-icon {
   stroke: var(--dark-color);
 }
+
 .view-more-container {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-.view-more-btn {
+/* Button Styles */
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--primary-color, #007bff);
-  color: white;
-  border: none;
-  border-radius: 25px;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
   cursor: pointer;
-  transition: var(--transition);
 }
 
-.view-more-btn:hover {
-  background-color: var(--secondary-color, #0056b3);
-  transform: translateY(-3px);
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button-right .icon {
+  transform: translate(4px);
+}
+
+.button-back .icon {
+  transform: translate(-4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button-right::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
 }
