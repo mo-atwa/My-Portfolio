@@ -4,7 +4,7 @@ import "../styles/About.css";
 const About = () => {
 
   const handDowanloudCV = () => {
-    window.open("#", "_blank");
+    window.open("https://drive.google.com/file/d/1oH9P8n6Gb4Hv0qNAXYkjiC-fvSW14jEb/view?usp=drive_link", "_blank");
   };
 
   return (
