@@ -15,8 +15,6 @@ Hello! I'm Mohamed Atwa, a Front-End Developer passionate about building modern 
 - Other useful libraries 📦
 
 ## My Projects 
-- Leon
-  . My first project with HTML and CSS
-   📂 **GitHub Repository:** [link]
+- Leon -My first project with HTML and CSS 📂 **GitHub Repository:** [link]
 
 Feel free to check out my work and reach out if you'd like to connect! 😊  
