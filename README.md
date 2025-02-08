@@ -4,7 +4,7 @@ Hello! I'm Mohamed Atwa, a Front-End Developer passionate about building modern 
 
 🚀 **Live Demo:** https://atwa-portfolio.netlify.app
 
-📂 **GitHub Repository:** https://mo-atwa.github.io/My-Portfolio/
+📂 **GitHub Repository:** [test](https://github.com/mo-atwa/My-Portfolio)
 
 ## ✨ Technologies Used  
 - React.js ⚛️  
