@@ -102,12 +102,6 @@
   color: var(--dark-color);
 }
 
-.project-info p {
-  font-size: 16px;
-  color: #3d3d3d;
-  line-height: 1.5;
-}
-
 .tech-tag {
   display: inline-block;
   padding: 0.25rem 0.75rem;
