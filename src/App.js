@@ -18,7 +18,7 @@ import "animate.css";
 const projects = [
   {
     title: "Hangman Game",
-    description: "A classic Hangman game built with HTML, CSS, and JavaScript. Test your vocabulary and guessing skills by figuring out the hidden word before the stick figure is fully drawn!",
+    description: "Test your vocabulary in this classic Hangman game - guess the hidden word before the stick figure meets its fate!",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "./images/hangman.png",
     demo: "https://hangman-atwa.netlify.app/",
