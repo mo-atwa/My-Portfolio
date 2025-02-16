@@ -17,6 +17,14 @@ import "animate.css";
 
 const projects = [
   {
+    title: "Guess the Name Game",
+    description: "Challenge yourself to identify famous players based on stats, achievements, and images! Perfect for sports enthusiasts looking for an engaging quiz experience.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "./images/guessthename.png",
+    demo: "https://guessthename-atwa.netlify.app/",
+    github: "https://github.com/mo-atwa/Guessthename",
+  },
+  {
     title: "Hangman Game",
     description: "Test your vocabulary in this classic Hangman game - guess the hidden word before the stick figure meets its fate!",
     tech: ["HTML", "CSS", "JavaScript"],
