@@ -16,6 +16,14 @@ import "./App.css";
 import "animate.css";
 
 const projects = [
+    {
+    title: "Weather App",
+    description: "A sleek and intuitive Weather web application built with React.js to help users stay updated with real-time weather conditions for any location around the globe.",
+    tech: ["HTML", "CSS", "JavaScript", "React.js"],
+    image: "./images/weather-app.png",
+    demo: "https://weatherapp-atwa.netlify.app/",
+    github: "https://github.com/mo-atwa/weather-app",
+  },
   {
     title: "Guess the Name Game",
     description: "Challenge yourself to identify famous players based on stats, achievements, and images! Perfect for sports enthusiasts looking for an engaging quiz experience.",
