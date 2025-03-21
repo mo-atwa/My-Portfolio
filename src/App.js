@@ -17,6 +17,14 @@ import "animate.css";
 
 const projects = [
     {
+    title: "FlashLingua",
+    description: "Master vocabulary and sentence structures through interactive flashcards and practice exercises.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "./images/FlashLingua.png",
+    demo: "https://flashlingua.netlify.app/",
+    github: "https://github.com/mo-atwa/FlashLingua",
+  },
+    {
     title: "Weather App",
     description: "A sleek and intuitive Weather web application built with React.js to help users stay updated with real-time weather conditions for any location around the globe.",
     tech: ["HTML", "CSS", "JavaScript", "React.js"],
